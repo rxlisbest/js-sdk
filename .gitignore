@@ -3,3 +3,7 @@ node_modules
 bower_components
 demo/config.js
 deploy.sh
+.idea
+test/*
+dist/*
+package-lock.json

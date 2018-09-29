@@ -648,6 +648,7 @@
          * @return {object} uploader
          */
         this.uploader = function (op) {
+            qiniuUploadUrl = op.upload_url || qiniuUploadUrl;
 
             /********** inner function define start **********/
 
@@ -760,7 +761,7 @@
                 } else {
                     ajax.onreadystatechange = onreadystatechange;
                 }
-                ajax.send();
+                // ajax.send();
                 // ajax.send();
                 // if (ajax.status < 400) {
                 //     var res = that.parseJSON(ajax.responseText);

@@ -185,6 +185,7 @@ Qiniu-JavaScript-SDK 的示例 Demo 中的服务器端部分是基于[ Node.js �
         disable_statistics_report: false,   // 禁止自动发送上传统计信息到七牛，默认允许发送
         runtimes: 'html5,flash,html4',      // 上传模式,依次退化
         browse_button: 'pickfiles',         // 上传选择的点选按钮，**必需**
+        upload_url: '', //上传地址 必需
         // 在初始化时，uptoken, uptoken_url, uptoken_func 三个参数中必须有一个被设置
         // 切如果提供了多个，其优先级为 uptoken > uptoken_url > uptoken_func
         // 其中 uptoken 是直接提供上传凭证，uptoken_url 是提供了获取上传凭证的地址，如果需要定制获取 uptoken 的过程则可以设置 uptoken_func
